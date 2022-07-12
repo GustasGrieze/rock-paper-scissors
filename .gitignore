@@ -1,0 +1,8 @@
+*__pycache__
+*log
+results.txt
+*exe
+*spec
+build
+dist
+.venv
