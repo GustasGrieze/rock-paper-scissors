@@ -54,12 +54,9 @@ while True:
         break
     else:
         choice = continue_playing
-        continue
-
 
 if games_played >= 1:
-    write_information_to_file(f"""
-Play session date: {datetime.now()}
+    write_information_to_file(f"""Play session date: {datetime.now()}
 Games played: -- {games_played} --
 Games won: {games_won}
 Games lost: {games_lost}
