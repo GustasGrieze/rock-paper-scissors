@@ -28,7 +28,7 @@ def user_tied(choice: int, image_chosen: int) -> bool:
         return True
 
 def write_information_to_file(data: str) -> None:
-    with open("results.txt", 'a') as f:
+    with open("../results.txt", 'a') as f:
         f.write(data)
 
 def calculate_user_win_rate(games_played: int, games_won: int, games_tied: int) -> int:
