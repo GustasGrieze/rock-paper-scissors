@@ -1,5 +1,5 @@
 import unittest
-from p_functions.functions import user_won, user_lost, user_tied, calculate_user_win_rate
+from functions import user_won, user_lost, user_tied, calculate_user_win_rate
 
 class TestUserGameResult(unittest.TestCase):
     def test_user_won(self):

@@ -1,15 +1,15 @@
 import time
 import logging
 from datetime import datetime
-from p_functions.functions import user_won, user_lost, user_tied, write_information_to_file, calculate_user_win_rate, print_user_choice, select_computer_choice
-from p_images.python_pictures import rock, paper, scissors
+from functions import user_won, user_lost, user_tied, write_information_to_file, calculate_user_win_rate, print_user_choice, select_computer_choice
+from python_pictures import rock, paper, scissors
 
 games_played = 0
 games_won = 0
 games_lost = 0
 games_tied = 0
 
-print("----Welcome to Rock Paper Scissors----\n")
+print("\n----Welcome to Rock Paper Scissors----\n")
 choice = input("Which do you choose?\nType 0 for Rock, 1 for Paper or 2 for Scissors.\n")
 
 while True:
