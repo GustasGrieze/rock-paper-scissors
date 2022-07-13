@@ -10,17 +10,17 @@ games_lost = 0
 games_tied = 0
 
 print("\n----Welcome to Rock Paper Scissors----\n")
-choice = input("Which do you choose?\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
+choice = input("Which do you choose?\nType 0 for Rock, 1 for Paper or 2 for Scissors: ")
 
 while True:
     try:
         choice = int(choice)            
     except ValueError:
-        choice = input("\nThat's not a number! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
+        choice = input("\nThat's not a number! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors: ")
         continue
     
     if choice > 2 or choice < 0:
-        choice = input("\nOops! that's not one of the options! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
+        choice = input("\nOops! that's not one of the options! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors: ")
         continue
 
     print_user_choice(choice, rock, paper, scissors)
@@ -45,7 +45,7 @@ while True:
 
     games_played += 1
 
-    logging.basicConfig(filename='results.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
+    logging.basicConfig(filename='../results.log', level=logging.INFO, format='%(asctime)s:%(levelname)s:%(message)s')
     logging.info(f"You {logging_result}")
 
     continue_playing = str.casefold(input("If you would like to continue playing type 0 for Rock, 1 for Paper or 2 for Scissors. \nIf you wish to exit the game type 'Exit': "))
@@ -61,5 +61,5 @@ Games played: -- {games_played} --
 Games won: {games_won}
 Games lost: {games_lost}
 Games tied: {games_tied}
-Session win rate: {calculate_user_win_rate(games_played, games_won, games_tied)}%\n\n""")
+Session win rate: {calculate_user_win_rate(games_played, games_won, games_tied)}%\n\n\n""")
 
