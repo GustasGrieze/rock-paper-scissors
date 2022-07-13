@@ -10,17 +10,17 @@ games_lost = 0
 games_tied = 0
 
 print("\n----Welcome to Rock Paper Scissors----\n")
-choice = input("Which do you choose?\nType 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+choice = input("Which do you choose?\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
 
 while True:
     try:
         choice = int(choice)            
     except ValueError:
-        choice = input("\nThat's not a number! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+        choice = input("\nThat's not a number! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
         continue
     
     if choice > 2 or choice < 0:
-        choice = input("\nOops! that's not one of the options! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors.\n")
+        choice = input("\nOops! that's not one of the options! Pick again!\nType 0 for Rock, 1 for Paper or 2 for Scissors:")
         continue
 
     print_user_choice(choice, rock, paper, scissors)
