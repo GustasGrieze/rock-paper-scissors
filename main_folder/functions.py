@@ -15,13 +15,13 @@ def select_computer_choice(rock: str, paper: str, scissors: str) -> int:
     return image_chosen
 
 def user_won(choice: int, image_chosen: int) -> bool:
-    return (choice == 0 and image_chosen == 2) or (choice == 1 and image_chosen == 0) or (choice == 2 and image_chosen == 1):
+    return (choice == 0 and image_chosen == 2) or (choice == 1 and image_chosen == 0) or (choice == 2 and image_chosen == 1)
 
 def user_lost(choice: int, image_chosen: int) -> bool:
-    return (choice == 1 and image_chosen == 2) or (choice == 0 and image_chosen == 1) or (choice == 2 and image_chosen == 0):
+    return (choice == 1 and image_chosen == 2) or (choice == 0 and image_chosen == 1) or (choice == 2 and image_chosen == 0)
 
 def user_tied(choice: int, image_chosen: int) -> bool:
-    return choice == image_chosen:
+    return choice == image_chosen
 
 def write_information_to_file(data: str) -> None:
     with open("../results.txt", 'a') as f:
