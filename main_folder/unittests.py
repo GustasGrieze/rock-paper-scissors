@@ -6,19 +6,19 @@ class TestUserGameResult(unittest.TestCase):
         self.assertEqual(True, user_won(0, 2))
         self.assertEqual(True, user_won(1, 0))
         self.assertEqual(True, user_won(2, 1))
-        self.assertEqual(None, user_won(2, 2))
+        self.assertEqual(False, user_won(2, 2))
 
     def test_user_lost(self):
         self.assertEqual(True, user_lost(1, 2))
         self.assertEqual(True, user_lost(0, 1))
         self.assertEqual(True, user_lost(2, 0))
-        self.assertEqual(None, user_lost(2, 2))
+        self.assertEqual(False, user_lost(2, 2))
 
     def test_user_tied(self):
         self.assertEqual(True, user_tied(0, 0))
         self.assertEqual(True, user_tied(1, 1))
         self.assertEqual(True, user_tied(2, 2))
-        self.assertEqual(None, user_tied(0, 1))
+        self.assertEqual(False, user_tied(0, 1))
 
 class TestCalculateUserWinRate(unittest.TestCase):
     def test_calculate_user_win_rate(self):
