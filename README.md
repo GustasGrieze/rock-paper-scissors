@@ -1,7 +1,7 @@
 
 # Rock Paper Scissors
 
-“Rock paper scissors” is a effortless and interesting game. Many of us used to play it in school to resolve disputes or just to spend some time. But how do you play it if you don't have any friends? 
+“Rock paper scissors” is an effortless and interesting game. Many of us used to play it in school to resolve disputes or just to spend some time. But how do you play it if you don't have any friends? 
 
 Simple!
 ## Installation
