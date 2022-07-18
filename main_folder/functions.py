@@ -31,5 +31,5 @@ def calculate_user_win_rate(games_played: int, games_won: int, games_tied: int) 
     games_played = games_played - games_tied
     try:
         return round(games_won / games_played * 100)
-    except Exception as e:
+    except Exception:
         return 0
